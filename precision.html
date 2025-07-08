@@ -1,0 +1,579 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="vi"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;SMC Group: SMC Phu My Precision&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CSS chung cho tất cả các trang */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #343a40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 8px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative; /* Added for language selector positioning */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header-image {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 250px; /* Fixed height for consistency */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover; /* Cover the area, cropping if necessary */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul li::before {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: '•';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-image { /* New class for images within sections */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 200px; /* Adjust height as needed */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.product-image { /* New class for product images */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 80%; /* Smaller width for product images */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px; /* Max width for product images */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 150px; /* Fixed height for product images */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: contain; /* Contain the image within the element */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px auto 20px auto; /* Center the image */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e2f0ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 6px solid #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px 10px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive adjustments */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 0.75rem 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 95%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>right: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gap: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector button {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 6px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.header-image, .section-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 150px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.product-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: 1px solid #002c5f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a:last-child {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>position: static;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.header-image, .section-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.product-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;SMC Group&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Giải pháp Cơ khí Chính xác &amp; Thép Chất lượng Cao&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="lang-selector"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('vi')" class="active"&gt;VI&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('en')"&gt;EN&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('zh')"&gt;ZH&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('ko')"&gt;KO&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('ja')"&gt;JA&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="index.html"&gt;Trang Chủ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="about.html"&gt;Về Chúng Tôi&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="precision.html"&gt;SMC Phu My Precision&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="coil_center.html"&gt;SMC Phu My Coil Center&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Removed link to applications.html --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="contact.html"&gt;Liên Hệ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="precision"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Image for Precision --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://placehold.co/1200x250/007bff/ffffff?text=SMC+Phu+My+Precision+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6698.jpg'" alt="SMC Phu My Precision Facility" class="header-image"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Vietnamese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="vi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC Phu My Precision: Chấn Dập &amp; Gia Công Chính Xác&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Chúng tôi cung cấp các giải pháp chấn dập và gia công kim loại tấm hàng đầu với năng lực sản xuất vượt trội, đáp ứng mọi yêu cầu khắt khe nhất của khách hàng.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Năng Lực Sản Xuất&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC Phu My Precision được trang bị các dây chuyền dập hiện đại, đảm bảo hiệu suất và độ chính xác cao:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Dây chuyền 1 &amp; 2:&lt;/strong&gt; Máy dập 800T với 6 bước dập, sử dụng hệ thống truyền tự động (Auto Transfer M/C) và có khả năng dập liên hoàn (800t-600t-400t, 400t-400t-400t). Dây chuyền hiện đại từ nhà cung ứng Hàn Quốc SIMPAC.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Dây chuyền 3:&lt;/strong&gt; Máy dập đơn 600T.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Năng Lực Sản Xuất Hàng Tháng (Dự Kiến)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Chúng tôi có khả năng sản xuất hàng triệu sản phẩm dập mỗi tháng bao gồm các linh kiện như:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Khung trước máy giặt (Washing machine Frame Front)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Frame+Front" alt="Khung trước máy giặt" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Nắp trên máy giặt (Washing machine Cover Top)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Cover+Top" alt="Nắp trên máy giặt" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Cửa tấm tủ lạnh (Fridge Plate Door)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Fridge+Plate+Door" alt="Cửa tấm tủ lạnh" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Khung Tivi (TV Chassis Rear)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=TV+Chassis+Rear" alt="Khung Tivi" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Bản lề khung (Bracket Hinge)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Bracket+Hinge" alt="Bản lề khung" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Nắp lưng (Cover Back)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Cover+Back" alt="Nắp lưng" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Các sản phẩm hiện tại của chúng tôi bao gồm các bộ phận cho máy giặt, tủ lạnh, và các sản phẩm lắp ráp khác. Chúng tôi cũng sản xuất các sản phẩm cho ngành điện, điện lạnh, ô tô, v.v..&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Dịch Vụ OEM &amp; ODM&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Với năng lực sản xuất hiện đại và đội ngũ chuyên gia giàu kinh nghiệm, SMC Phu My Precision tự tin cung cấp các dịch vụ OEM (sản xuất theo thiết kế của khách hàng) và ODM (thiết kế và sản xuất theo yêu cầu). Chúng tôi cam kết mang đến những sản phẩm chất lượng cao, đáp ứng đúng thông số kỹ thuật và thời gian giao hàng.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Chủ Động Nguồn Cung Ứng Thép&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Là một phần của SMC Group, chúng tôi có lợi thế lớn trong việc tự chủ động tìm kiếm và cung ứng nguồn nguyên liệu thép chất lượng cao thông qua SMC Phu My Coil Center. Điều này giúp chúng tôi kiểm soát chặt chẽ chất lượng đầu vào, tối ưu hóa chi phí sản xuất và đảm bảo sự ổn định trong chuỗi cung ứng. Nguyên liệu thép được cung cấp từ các nhà máy thép hàng đầu như CSVC, POSCO, Nam Kim, Tôn Đông Á, Yiehphui, Nippon, JFE v.v.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- English Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="en" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC Phu My Precision: Stamping &amp; Precision Machining&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;We provide leading stamping and sheet metal processing solutions with outstanding production capacity, meeting all stringent customer requirements.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Production Capacity&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC Phu My Precision is equipped with modern press lines, ensuring high efficiency and precision:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Lines 1 &amp; 2:&lt;/strong&gt; 800T press machine with 6 steps, using Auto Transfer M/C, capable of continuous stamping (800t-600t-400t, 400t-400t-400t). Modern lines from Korean supplier SIMPAC.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Line 3:&lt;/strong&gt; 600T single press machine.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Expected Monthly Production Capacity&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;We are capable of producing millions of stamped products each month, including components such as:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Washing machine Frame Front</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Frame+Front" alt="Washing Machine Frame Front" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Washing machine Cover Top</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Cover+Top" alt="Washing Machine Cover Top" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Fridge Plate Door</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Fridge+Plate+Door" alt="Fridge Plate Door" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>TV Chassis Rear</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=TV+Chassis+Rear" alt="TV Chassis Rear" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Bracket Hinge</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Bracket+Hinge" alt="Bracket Hinge" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Cover Back</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Cover+Back" alt="Cover Back" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Our current products include components for washing machines, refrigerators, and other assembled products. We also produce items for the electrical, refrigeration, automotive industries, etc.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;OEM &amp; ODM Services&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;With modern production capabilities and an experienced team of experts, SMC Phu My Precision confidently provides OEM (manufacturing according to customer designs) and ODM (design and manufacturing according to requirements) services. We are committed to delivering high-quality products that meet precise specifications and delivery times.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Proactive Steel Supply&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;As part of SMC Group, we have a significant advantage in proactively sourcing and supplying high-quality steel raw materials through SMC Phu My Coil Center. This allows us to strictly control input quality, optimize production costs, and ensure supply chain stability. Steel raw materials are supplied from leading steel mills such as CSVC, POSCO, Nam Kim, Ton Dong A, Yiehphui, Nippon, JFE, etc.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Chinese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="zh" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC富美精密：冲压与精密加工&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;我们提供领先的冲压和钣金加工解决方案，拥有卓越的生产能力，满足客户所有严格要求。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;生产能力&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC富美精密配备现代化冲压生产线，确保高效率和高精度：&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;1号线和2号线：&lt;/strong&gt; 800吨冲压机，6步冲压，采用自动传输机（Auto Transfer M/C），可连续冲压（800t-600t-400t, 400t-400t-400t）。来自韩国供应商SIMPAC的现代化生产线。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;3号线：&lt;/strong&gt; 600吨单冲压机。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;每月预计生产能力&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;我们每月能够生产数百万件冲压产品，包括以下组件：&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>洗衣机前框 (Washing machine Frame Front)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Frame+Front" alt="洗衣机前框" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>洗衣机顶盖 (Washing machine Cover Top)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Cover+Top" alt="洗衣机顶盖" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>冰箱门板 (Fridge Plate Door)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Fridge+Plate+Door" alt="冰箱门板" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>电视机底盘 (TV Chassis Rear)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=TV+Chassis+Rear" alt="电视机底盘" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>铰链支架 (Bracket Hinge)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Bracket+Hinge" alt="铰链支架" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>后盖 (Cover Back)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Cover+Back" alt="后盖" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;我们目前的产品包括洗衣机、冰箱和其他组装产品的部件。我们也为电气、制冷、汽车等行业生产产品。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;OEM &amp; ODM 服务&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;凭借现代化的生产能力和经验丰富的专家团队，SMC富美精密自信地提供OEM（根据客户设计制造）和ODM（根据要求设计和制造）服务。我们致力于提供高质量产品，满足精确的规格和交货时间。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;主动钢材供应&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;作为SMC集团的一部分，我们通过SMC富美钢卷中心主动采购和供应高质量钢材原材料具有显著优势。这使我们能够严格控制投入质量，优化生产成本，并确保供应链的稳定性。钢材原材料由领先的钢厂供应，如CSVC、POSCO、Nam Kim、Ton Dong A、Yiehphui、Nippon、JFE等。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Korean Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="ko" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC 푸미 정밀: 스탬핑 및 정밀 가공&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;우리는 뛰어난 생산 능력으로 최고의 스탬핑 및 판금 가공 솔루션을 제공하며, 고객의 모든 엄격한 요구 사항을 충족합니다.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;생산 능력&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC 푸미 정밀은 고효율 및 정밀도를 보장하는 현대적인 프레스 라인을 갖추고 있습니다:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;라인 1 &amp; 2:&lt;/strong&gt; 6단계 800T 프레스 기계, 자동 이송 장치(Auto Transfer M/C) 사용, 연속 스탬핑 가능 (800t-600t-400t, 400t-400t-400t). 한국 공급업체 SIMPAC의 현대적인 라인입니다.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;라인 3:&lt;/strong&gt; 600T 단일 프레스 기계.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;월별 예상 생산 능력&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;우리는 매월 수백만 개의 스탬핑 제품을 생산할 수 있으며, 다음 구성 요소를 포함합니다:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>세탁기 전면 프레임 (Washing machine Frame Front)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Frame+Front" alt="세탁기 전면 프레임" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>세탁기 상단 커버 (Washing machine Cover Top)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Cover+Top" alt="세탁기 상단 커버" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>냉장고 문판 (Fridge Plate Door)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Fridge+Plate+Door" alt="냉장고 문판" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>TV 섀시 후면 (TV Chassis Rear)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=TV+Chassis+Rear" alt="TV 섀시 후면" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>브래킷 힌지 (Bracket Hinge)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Bracket+Hinge" alt="브래킷 힌지" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>후면 커버 (Cover Back)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Cover+Back" alt="후면 커버" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;현재 제품에는 세탁기, 냉장고 및 기타 조립 제품용 부품이 포함됩니다. 또한 전기, 냉동, 자동차 산업 등을 위한 품목도 생산합니다.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;OEM &amp; ODM 서비스&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;현대적인 생산 능력과 경험이 풍부한 전문가 팀을 통해 SMC 푸미 정밀은 OEM(고객 설계에 따른 제조) 및 ODM(요구 사항에 따른 설계 및 제조) 서비스를 자신 있게 제공합니다。 우리는 정확한 사양과 납기일을 충족하는 고품질 제품을 제공하기 위해 최선을 다합니다。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;선제적 철강 공급&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC 그룹의 일원으로서, 우리는 SMC 푸미 코일 센터를 통해 고품질 철강 원자재를 선제적으로 조달하고 공급하는 데 큰 이점을 가지고 있습니다. 이를 통해 우리는 투입 품질을 엄격하게 통제하고, 생산 비용을 최적화하며, 공급망의 안정성을 보장할 수 있습니다. 철강 원자재는 CSVC, POSCO, Nam Kim, Ton Dong A, Yiehphui, Nippon, JFE 등과 같은 선도적인 철강 공장에서 공급됩니다。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Japanese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="ja" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMCフーミープレシジョン：プレス加工と精密加工&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;私たちは、卓越した生産能力を持つ最先端のプレス加工および板金加工ソリューションを提供し、お客様のあらゆる厳しい要件を満たします。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;生産能力&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMCフーミープレシジョンは、高効率と高精度を保証する最新のプレスラインを備えています。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;ライン1および2:&lt;/strong&gt; 6工程800Tプレス機、自動搬送装置（Auto Transfer M/C）を使用し、連続プレス加工が可能（800t-600t-400t、400t-400t-400t）。韓国のサプライヤーSIMPACからの最新ラインです。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;ライン3:&lt;/strong&gt; 600T単一プレス機。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;月間生産能力（予定）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;私たちは毎月数百万個のプレス加工品を生産することができ、以下の部品が含まれます。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>洗濯機フレームフロント (Washing machine Frame Front)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Frame+Front" alt="洗濯機フレームフロント" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>洗濯機カバートップ (Washing machine Cover Top)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Washing+Machine+Cover+Top" alt="洗濯機カバートップ" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>冷蔵庫プレートドア (Fridge Plate Door)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Fridge+Plate+Door" alt="冷蔵庫プレートドア" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>テレビシャーシリア (TV Chassis Rear)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=TV+Chassis+Rear" alt="テレビシャーシリア" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>ブラケットヒンジ (Bracket Hinge)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Bracket+Hinge" alt="ブラケットヒンジ" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>カバーバック (Cover Back)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/400x150/e9ecef/343a40?text=Cover+Back" alt="カバーバック" class="product-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;現在の製品には、洗濯機、冷蔵庫、その他の組み立て製品の部品が含まれます。また、電気、冷凍、自動車産業向けの製品も生産しています。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;OEM &amp; ODMサービス&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;最新の生産能力と経験豊富な専門家チームにより、SMCフーミープレシジョンはOEM（お客様の設計に基づく製造）およびODM（要件に基づく設計と製造）サービスを自信を持って提供します。私たちは、正確な仕様と納期を満たす高品質な製品を提供することをお約束します。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;積極的な鋼材供給&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMCグループの一員として、私たちはSMCフーミーコイルセンターを通じて高品質な鋼材原材料を積極的に調達・供給できるという大きな利点を持っています。これにより、投入品質を厳格に管理し、生産コストを最適化し、サプライチェーンの安定性を確保することができます。鋼材原材料は、CSVC、POSCO、Nam Kim、Ton Dong A、Yiehphui、Nippon、JFEなどの主要な製鉄所から供給されています。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 SMC Group. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// JavaScript for language switching</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setLanguage(lang) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>localStorage.setItem('preferredLang', lang); // Save preferred language</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-content').forEach(content =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (content.getAttribute('data-lang') === lang) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update active button state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-selector button').forEach(button =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (button.onclick.toString().includes(`setLanguage('${lang}')`)) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>button.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>button.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// On page load, set language from localStorage or default to Vietnamese</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const savedLang = localStorage.getItem('preferredLang') || 'vi';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setLanguage(savedLang);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

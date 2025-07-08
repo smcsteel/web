@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="vi"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;SMC Group: Về Chúng Tôi&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CSS chung cho tất cả các trang */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #343a40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 8px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul li::before {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: '•';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-image { /* New class for images within sections */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 200px; /* Adjust height as needed */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e2f0ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 6px solid #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px 10px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive adjustments */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 0.75rem 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 95%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>right: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gap: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector button {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 6px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.section-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 150px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: 1px solid #002c5f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a:last-child {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>position: static;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.section-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 120px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;SMC Group&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Giải pháp Cơ khí Chính xác &amp; Thép Chất lượng Cao&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="lang-selector"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('vi')" class="active"&gt;VI&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('en')"&gt;EN&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('zh')"&gt;ZH&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('ko')"&gt;KO&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('ja')"&gt;JA&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="index.html"&gt;Trang Chủ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="about.html"&gt;Về Chúng Tôi&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="precision.html"&gt;SMC Phu My Precision&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="coil_center.html"&gt;SMC Phu My Coil Center&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Removed link to applications.html --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="contact.html"&gt;Liên Hệ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Vietnamese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="vi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;Về Chúng Tôi&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC Group&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Với hơn 35 năm kinh nghiệm trong lĩnh vực kinh doanh, gia công và sản xuất sắt thép, SMC Group là một tập đoàn vững mạnh, không ngừng nỗ lực cải tiến và hoàn thiện để cung cấp sản phẩm và dịch vụ chất lượng cao nhất.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC Phu My Precision (SMC Cơ Khí Chính Xác)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Precision+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6698.jpg'" alt="SMC Phu My Precision Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Được thành lập vào ngày 19/01/2021, SMC Phu My Precision chuyên về sản xuất và gia công các sản phẩm dập (Press) và ép nhựa (Injection).&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Vốn đầu tư:&lt;/strong&gt; 10.5 triệu USD&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Nhân sự:&lt;/strong&gt; 300 người&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Diện tích nhà máy:&lt;/strong&gt; 35,752 m² &lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Địa chỉ:&lt;/strong&gt; Đường N7, KCN Phú Mỹ II, Phường Phú Mỹ, TP. Hồ Chí Minh (P. Tân Phước, TP. Phú Mỹ, Tỉnh Bà Rịa Vũng Tàu - cũ)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Với triết lý kinh doanh "Sự thấu hiểu đối tác, thấu hiểu chính mình. Tiên phong trong mọi hoạt động" và "Minh bạch, Uy tín và Chuyên nghiệp. Hài hòa mọi lợi ích", SMC Phu My Precision luôn đặt sự hài lòng của khách hàng lên hàng đầu.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC Phu My Coil Center (SMC Trung Tâm Thép Cuộn)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Coil+Center+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6592.jpg'" alt="SMC Phu My Coil Center Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Là đơn vị thành viên của SMC Group, SMC Phu My Coil Center chuyên sản xuất và kinh doanh các sản phẩm thép được gia công với độ chính xác cao, phục vụ cho các ngành xây dựng, giao thông vận tải, điện, điện tử, điện lạnh và hàng gia dụng.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Hệ thống thiết bị hiện đại&lt;/strong&gt; và phương pháp quản lý khoa học theo tiêu chuẩn ISO 9001:2015, ISO 14001:2015, ISO 45001:2018.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Năng lực sản xuất:&lt;/strong&gt; 200.000 tấn/năm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Địa chỉ:&lt;/strong&gt; Đường N7, KCN Phú Mỹ II, Phường Phú Mỹ, TP. Hồ Chí Minh (P. Tân Phước, TP. Phú Mỹ, Tỉnh Bà Rịa Vũng Tàu - cũ)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- English Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="en" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;About Us&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC Group&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;With over 35 years of experience in the trading, processing, and manufacturing of iron and steel of all kinds, SMC Group is a strong corporation, continuously striving to improve and perfect to provide the highest quality products and services.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC Phu My Precision (SMC Precision Mechanical)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Precision+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6698.jpg'" alt="SMC Phu My Precision Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Established on January 19, 2021, SMC Phu My Precision specializes in the production and processing of pressed (stamped) and injection molded products.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Investment Capital:&lt;/strong&gt; 10.5 million USD&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Personnel:&lt;/strong&gt; 300 people&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Factory Area:&lt;/strong&gt; 35,752 m² &lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Address:&lt;/strong&gt; Road N7, Phu My II Industrial Zone, Phu My Ward, Ho Chi Minh City (formerly Tan Phuoc Ward, Phu My Town, Ba Ria Vung Tau Province)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;With the business philosophy "Understanding others, understanding ourselves. Pioneering in all activities" and "Being Transparent, Prestigious and Professional. Harmonizing all interests", SMC Phu My Precision always prioritizes customer satisfaction.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC Phu My Coil Center (SMC Coil Steel Center)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Coil+Center+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6592.jpg'" alt="SMC Phu My Coil Center Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;As a member unit of SMC Group, SMC Phu My Coil Center specializes in manufacturing and trading high-precision steel processed products, serving the construction, transportation, electricity, electronics, refrigeration, and household goods industries.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Modern equipment system&lt;/strong&gt; and scientific management methods according to ISO 9001:2015, ISO 14001:2015, ISO 45001:2018 standards.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Production Capacity:&lt;/strong&gt; 200,000 tons/year.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Address:&lt;/strong&gt; Road N7, Phu My II Industrial Zone, Phu My Ward, Ho Chi Minh City (formerly Tan Phuoc Ward, Phu My Town, Ba Ria Vung Tau Province)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Chinese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="zh" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;关于我们&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC集团&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC集团在各类钢铁贸易、加工和制造领域拥有超过35年的经验，是一个强大的企业，不断努力改进和完善，以提供最高质量的产品和服务。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC富美精密（SMC精密机械）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Precision+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6698.jpg'" alt="SMC Phu My Precision Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC富美精密成立于2021年1月19日，专业生产和加工冲压和注塑产品。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;投资资本：&lt;/strong&gt; 1050万美元&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;员工：&lt;/strong&gt; 300人&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;厂房面积：&lt;/strong&gt; 35,752 平方米&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;地址：&lt;/strong&gt; 胡志明市富美坊富美二工业区N7路（原巴地头顿省富美市新福坊）&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;秉承“理解他人，理解自我。在所有活动中先行”以及“透明、信誉和专业。和谐所有利益”的经营理念，SMC富美精密始终将客户满意度放在首位。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC富美钢卷中心（SMC钢卷中心）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Coil+Center+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6592.jpg'" alt="SMC Phu My Coil Center Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;作为SMC集团的成员单位，SMC富美钢卷中心专业生产和贸易高精度钢材加工产品，服务于建筑、交通、电力、电子、制冷和家居用品等行业。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;现代化设备系统&lt;/strong&gt;和符合ISO 9001:2015、ISO 14001:2015、ISO 45001:2018标准的科学管理方法。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;生产能力：&lt;/strong&gt; 每年20万吨。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;地址：&lt;/strong&gt; 胡志明市富美坊富美二工业区N7路（原巴地头顿省富美市新福坊）&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Korean Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="ko" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;회사 소개&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC 그룹&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC 그룹은 35년 이상의 철강 무역, 가공 및 제조 분야 경험을 바탕으로, 최고 품질의 제품과 서비스를 제공하기 위해 끊임없이 개선하고 완벽을 추구하는 강력한 기업입니다.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC 푸미 정밀 (SMC 정밀 기계)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Precision+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6698.jpg'" alt="SMC Phu My Precision Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;2021년 1월 19일에 설립된 SMC 푸미 정밀은 프레스(스탬핑) 및 사출 성형 제품의 생산 및 가공을 전문으로 합니다.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;투자 자본:&lt;/strong&gt; 1,050만 달러&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;직원:&lt;/strong&gt; 300명&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;공장 면적:&lt;/strong&gt; 35,752 m² &lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;주소:&lt;/strong&gt; 호치민시 푸미 워드 푸미 II 산업 단지 N7 도로 (구 바리아 붕따우 성 푸미 타운 탄푹 워드)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;"타인을 이해하고 자신을 이해하라. 모든 활동에서 선구자가 되라"는 경영 철학과 "투명하고, 신뢰할 수 있으며, 전문적이어라. 모든 이해관계를 조화롭게 하라"는 원칙을 바탕으로, SMC 푸미 정밀은 항상 고객 만족을 최우선으로 합니다.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMC 푸미 코일 센터 (SMC 코일 철강 센터)&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Coil+Center+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6592.jpg'" alt="SMC Phu My Coil Center Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC 그룹의 계열사인 SMC 푸미 코일 센터는 건설, 운송, 전기, 전자, 냉동 및 가정용품 산업에 사용되는 고정밀 강철 가공 제품을 제조 및 거래합니다.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;ISO 9001:2015, ISO 14001:2015, ISO 45001:2018 표준에 따른 &lt;strong&gt;현대적인 장비 시스템&lt;/strong&gt;과 과학적인 관리 방법.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;생산 능력:&lt;/strong&gt; 연간 200,000톤.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;주소:&lt;/strong&gt; 호치민시 푸미 워드 푸미 II 산업 단지 N7 도로 (구 바리아 붕따우 성 푸미 타운 탄푹 워드)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Japanese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="ja" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;会社概要&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMCグループ&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMCグループは、あらゆる種類の鉄鋼の貿易、加工、製造分野で35年以上の経験を持ち、最高品質の製品とサービスを提供するために継続的に改善と完成に努める強力な企業です。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMCフーミープレシジョン（SMC精密機械）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Precision+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6698.jpg'" alt="SMC Phu My Precision Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;2021年1月19日に設立されたSMCフーミープレシジョンは、プレス加工品および射出成形品の製造と加工を専門としています。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;投資資本:&lt;/strong&gt; 1,050万米ドル&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;従業員:&lt;/strong&gt; 300名&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;工場面積:&lt;/strong&gt; 35,752 m² &lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;所在地:&lt;/strong&gt; ホーチミン市フーミー区フーミーII工業団地N7通り（旧バリア・ブンタウ省フーミー町タンフック区）&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;「他者を理解し、自己を理解する。すべての活動において先駆者となる」という経営理念と、「透明性、信頼性、専門性。すべての利益を調和させる」という原則に基づき、SMCフーミープレシジョンは常にお客様の満足度を最優先しています。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;SMCフーミーコイルセンター（SMCコイル鋼材センター）&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=SMC+Coil+Center+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6592.jpg'" alt="SMC Phu My Coil Center Facility" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMCグループの一員であるSMCフーミーコイルセンターは、建設、輸送、電気、電子、冷凍、家庭用品産業向けの高精度鋼材加工製品の製造と取引を専門としています。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;ISO 9001:2015、ISO 14001:2015、ISO 45001:2018規格に準拠した&lt;strong&gt;最新の設備システム&lt;/strong&gt;と科学的な管理方法。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;生産能力:&lt;/strong&gt; 年間200,000トン。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;所在地:&lt;/strong&gt; ホーチミン市フーミー区フーミーII工業団地N7通り（旧バリア・ブンタウ省フーミー町タンフック区）&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 SMC Group. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// JavaScript for language switching</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setLanguage(lang) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>localStorage.setItem('preferredLang', lang); // Save preferred language</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-content').forEach(content =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (content.getAttribute('data-lang') === lang) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update active button state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-selector button').forEach(button =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (button.onclick.toString().includes(`setLanguage('${lang}')`)) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>button.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>button.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// On page load, set language from localStorage or default to Vietnamese</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const savedLang = localStorage.getItem('preferredLang') || 'vi';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setLanguage(savedLang);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

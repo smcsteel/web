@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="vi"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;SMC Group: SMC Phu My Coil Center&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* CSS chung cho tất cả các trang */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #343a40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 8px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header-image {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 250px; /* Fixed height for consistency */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover; /* Cover the area, cropping if necessary */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>right: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.lang-selector button.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1.25rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 15px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #e9ecef;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul li {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ul li::before {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>content: '•';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.section-image { /* New class for images within sections */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 200px; /* Adjust height as needed */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e2f0ff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 6px solid #007bff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info a {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #0056b3;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.contact-info a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #004085;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px 10px 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive adjustments */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 0.75rem 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 95%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.7rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>right: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gap: 3px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector button {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 6px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.header-image, .section-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 150px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: 1px solid #002c5f;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nav a:last-child {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-bottom: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>header p {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>h3 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.lang-selector {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>position: static;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.header-image, .section-image {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;SMC Group&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Giải pháp Cơ khí Chính xác &amp; Thép Chất lượng Cao&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="lang-selector"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('vi')" class="active"&gt;VI&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('en')"&gt;EN&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('zh')"&gt;ZH&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('ko')"&gt;KO&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="setLanguage('ja')"&gt;JA&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="index.html"&gt;Trang Chủ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="about.html"&gt;Về Chúng Tôi&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="precision.html"&gt;SMC Phu My Precision&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="coil_center.html"&gt;SMC Phu My Coil Center&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Removed link to applications.html --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="contact.html"&gt;Liên Hệ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="coilcenter"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Image for Coil Center --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;img src="https://placehold.co/1200x250/007bff/ffffff?text=SMC+Phu+My+Coil+Center+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6592.jpg'" alt="SMC Phu My Coil Center Facility" class="header-image"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Vietnamese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="vi"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC Phu My Coil Center: Thép Cuộn &amp; Thép Tấm&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC Phu My Coil Center là nhà cung cấp hàng đầu các sản phẩm thép chất lượng cao, đa dạng về chủng loại và quy cách.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Sản Phẩm Đa Dạng&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Chúng tôi cung cấp các loại thép sau:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép cán nóng (Hot rolled steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép cán nóng đã tẩy gỉ và bôi dầu (Hot Rolled Pickled and Oiled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép cán nguội (Cold Rolled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép mạ kẽm nhúng nóng (Hot-Dip Zinc-Coated Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép mạ kẽm điện phân (Electro Galvanized Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép phủ màu (OPPGI-PPGL - PCM Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép không gỉ (Stainless Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Thép điện (Electrical Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Năng Lực Gia Công&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Chúng tôi có khả năng gia công thép cuộn thành tấm và dải theo yêu cầu:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Máy xẻ băng (Slitting Machine):&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Slitting+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6824.JPG'" alt="Máy xẻ băng" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Vật liệu: PO, CR, GI, GL, PP, EGI, ES.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Độ dày: 0.25&amp;divide;3.2 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Chiều rộng: 24&amp;divide;1350 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Dung sai chiều rộng: +/-0.2 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Trọng lượng cuộn tối đa: 20 tấn.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Đường kính trong: 508, 610 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Đường kính ngoài: Tối đa 1800 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Máy cắt tấm (Shearing Machine):&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Shearing+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0439.jpg'" alt="Máy cắt tấm" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Vật liệu: PO, CR, GI, GL, PP, EGI.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Độ dày: 0.3&amp;divide;6.0 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Chiều rộng: 150&amp;divide;1400 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Chiều dài tấm: Tối đa 6000 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Dung sai chiều dài: +/-0.5 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Trọng lượng cuộn tối đa: 15 tấn.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Đường kính trong: 508, 610 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Đường kính ngoài: Tối đa 1800 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Kiểm Soát Chất Lượng&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Quality+Control+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0354.jpg'" alt="Kiểm soát chất lượng" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Chất lượng được kiểm soát chặt chẽ ở mọi giai đoạn để đảm bảo sản phẩm đến tay khách hàng đạt tiêu chuẩn cao nhất và độ chính xác cao.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- English Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="en" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC Phu My Coil Center: Steel Coils &amp; Sheets&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC Phu My Coil Center is a leading supplier of high-quality steel products, diverse in types and specifications.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Diverse Products&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;We supply the following types of steel:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Hot rolled steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Hot Rolled Pickled and Oiled Steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Cold Rolled Steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Hot-Dip Zinc-Coated Steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Electro Galvanized Steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Pre-painted Steel (OPPGI-PPGL - PCM Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Stainless Steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;Electrical Steel&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Processing Capacity&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;We are capable of processing steel coils into sheets and strips as required:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Slitting Machine:&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Slitting+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6824.JPG'" alt="Slitting Machine" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Material: PO, CR, GI, GL, PP, EGI, ES.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Thickness: 0.25&amp;divide;3.2 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Width: 24&amp;divide;1350 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Width tolerance: +/-0.2 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Max coil weight: 20 tons.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Inner Diameter: 508, 610 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Outer Diameter: Max 1800 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Shearing Machine:&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Shearing+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0439.jpg'" alt="Shearing Machine" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Material: PO, CR, GI, GL, PP, EGI.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Thickness: 0.3&amp;divide;6.0 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Width: 150&amp;divide;1400 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Sheet Length: Max 6000 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Length tolerance: +/-0.5 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Max coil weight: 15 tons.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Inner Diameter: 508, 610 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Outer Diameter: Max 1800 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Quality Control&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Quality+Control+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0354.jpg'" alt="Quality Control" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;Quality is strictly controlled at every stage to ensure products delivered to customers meet the highest standards and high precision.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Chinese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="zh" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC富美钢卷中心：钢卷与钢板&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC富美钢卷中心是高质量钢材产品的领先供应商，种类和规格多样。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;产品多样性&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;我们提供以下类型的钢材：&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;热轧钢 (Hot rolled steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;热轧酸洗涂油钢 (Hot Rolled Pickled and Oiled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;冷轧钢 (Cold Rolled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;热镀锌钢 (Hot-Dip Zinc-Coated Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;电镀锌钢 (Electro Galvanized Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;彩涂钢 (OPPGI-PPGL - PCM Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;不锈钢 (Stainless Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;电工钢 (Electrical Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;加工能力&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;我们能够根据要求将钢卷加工成钢板和钢带：&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;分条机 (Slitting Machine)：&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Slitting+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6824.JPG'" alt="分条机" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;材料：PO, CR, GI, GL, PP, EGI, ES。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;厚度：0.25&amp;divide;3.2 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;宽度：24&amp;divide;1350 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;宽度公差：+/-0.2 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;最大卷重：20 吨。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;内径：508, 610 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;外径：最大 1800 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;剪板机 (Shearing Machine)：&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Shearing+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0439.jpg'" alt="剪板机" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;材料：PO, CR, GI, GL, PP, EGI。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;厚度：0.3&amp;divide;6.0 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;宽度：150&amp;divide;1400 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;板材长度：最大 6000 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;长度公差：+/-0.5 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;最大卷重：15 吨。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;内径：508, 610 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;外径：最大 1800 毫米。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;质量控制&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Quality+Control+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0354.jpg'" alt="质量控制" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;在每个阶段都严格控制质量，以确保交付给客户的产品达到最高标准和高精度。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Korean Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="ko" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMC 푸미 코일 센터: 강철 코일 및 시트&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMC 푸미 코일 센터는 다양한 종류와 사양의 고품질 강철 제품을 공급하는 선두 기업입니다.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;다양한 제품&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;우리는 다음 유형의 강철을 공급합니다:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;열연강 (Hot rolled steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;산세 및 유처리 열연강 (Hot Rolled Pickled and Oiled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;냉연강 (Cold Rolled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;용융 아연 도금 강 (Hot-Dip Zinc-Coated Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;전기 아연 도금 강 (Electro Galvanized Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;컬러 코팅 강 (OPPGI-PPGL - PCM Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;스테인리스 강 (Stainless Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;전기 강 (Electrical Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;가공 능력&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;우리는 요구 사항에 따라 강철 코일을 시트 및 스트립으로 가공할 수 있습니다:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;슬리팅 머신 (Slitting Machine):&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Slitting+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6824.JPG'" alt="슬리팅 머신" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;재료: PO, CR, GI, GL, PP, EGI, ES.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;두께: 0.25&amp;divide;3.2 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;폭: 24&amp;divide;1350 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;폭 공차: +/-0.2 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;최대 코일 중량: 20 톤.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;내경: 508, 610 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;외경: 최대 1800 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;전단기 (Shearing Machine):&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Shearing+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0439.jpg'" alt="전단기" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;재료: PO, CR, GI, GL, PP, EGI.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;두께: 0.3&amp;divide;6.0 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;폭: 150&amp;divide;1400 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;시트 길이: 최대 6000 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;길이 공차: +/-0.5 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;최대 코일 중량: 15 톤.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;내경: 508, 610 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;外径: 最大 1800 mm.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;품질 관리&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Quality+Control+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0354.jpg'" alt="품질 관리" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;고객에게 전달되는 제품이 최고 수준의 표준과 높은 정밀도를 충족하도록 모든 단계에서 품질을 엄격하게 관리합니다.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Japanese Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="lang-content" data-lang="ja" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2&gt;SMCフーミーコイルセンター：鋼材コイルとシート&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;SMCフーミーコイルセンターは、種類と仕様が多様な高品質鋼材製品の主要サプライヤーです。&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;多様な製品&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;以下の種類の鋼材を提供しています。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;熱延鋼板 (Hot rolled steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;熱延酸洗油付け鋼板 (Hot Rolled Pickled and Oiled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;冷延鋼板 (Cold Rolled Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;溶融亜鉛めっき鋼板 (Hot-Dip Zinc-Coated Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;電気亜鉛めっき鋼板 (Electro Galvanized Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;塗装鋼板 (OPPGI-PPGL - PCM Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;ステンレス鋼 (Stainless Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;電磁鋼板 (Electrical Steel)&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;加工能力&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;私たちは、必要に応じて鋼材コイルをシートやストリップに加工することができます。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;スリッティングマシン (Slitting Machine):&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Slitting+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='1O0A6824.JPG'" alt="スリッティングマシン" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;材料: PO, CR, GI, GL, PP, EGI, ES。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;厚さ: 0.25&amp;divide;3.2 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;幅: 24&amp;divide;1350 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;幅公差: +/-0.2 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;最大コイル重量: 20トン。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;内径: 508, 610 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;外径: 最大 1800 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;シャーリングマシン (Shearing Machine):&lt;/strong&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Shearing+Machine+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0439.jpg'" alt="シャーリングマシン" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;材料: PO, CR, GI, GL, PP, EGI。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;厚さ: 0.3&amp;divide;6.0 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;幅: 150&amp;divide;1400 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;シート長さ: 最大 6000 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;長さ公差: +/-0.5 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;最大コイル重量: 15トン。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;内径: 508, 610 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;外径: 最大 1800 mm。&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;品質管理&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://placehold.co/1200x200/007bff/ffffff?text=Quality+Control+Image+Placeholder" onerror="this.onerror=null;this.src='NMP_0354.jpg'" alt="品質管理" class="section-image"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;お客様に届けられる製品が最高の基準と高精度を満たすよう、すべての段階で品質を厳格に管理しています。&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 SMC Group. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// JavaScript for language switching</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setLanguage(lang) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>localStorage.setItem('preferredLang', lang); // Save preferred language</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-content').forEach(content =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (content.getAttribute('data-lang') === lang) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update active button state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.lang-selector button').forEach(button =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (button.onclick.toString().includes(`setLanguage('${lang}')`)) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>button.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>button.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// On page load, set language from localStorage or default to Vietnamese</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const savedLang = localStorage.getItem('preferredLang') || 'vi';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setLanguage(savedLang);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
